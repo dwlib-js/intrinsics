@@ -1,0 +1,31 @@
+{
+  "name": "@dwlib/intrinsics",
+  "version": "1.0.0",
+  "description": "Intrinsics",
+  "main": "lib/index.js",
+  "exports": {
+    "require": "./lib/index.js",
+    "import": "./lib/index.mjs"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwlib-js/intrinsics.git"
+  },
+  "keywords": [
+    "intrinsics"
+  ],
+  "author": "Pavel Wolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwlib-js/intrinsics/issues"
+  },
+  "homepage": "https://github.com/dwlib-js/intrinsics#readme",
+  "dependencies": {
+    "@dwlib/abstract": "^1.0.0",
+    "@dwlib/primordials": "^1.0.1"
+  }
+}
