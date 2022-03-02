@@ -26,6 +26,6 @@
   "homepage": "https://github.com/dwlib-js/intrinsics#readme",
   "dependencies": {
     "@dwlib/abstract": "^1.0.0",
-    "@dwlib/primordials": "^1.0.1"
+    "@dwlib/primordials": "^1.0.2"
   }
 }
