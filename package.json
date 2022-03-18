@@ -1,11 +1,36 @@
 {
   "name": "@dwlib/intrinsics",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Intrinsics",
   "main": "lib/index.js",
+  "imports": {
+    "#global": "@dwlib/global",
+    "#internal": {
+      "require": "./lib/internal/index.js",
+      "import": "./lib/internal/index.mjs"
+    },
+    "#abstract/*": {
+      "require": "./lib/abstract/*.js",
+      "import": "./lib/abstract/*.mjs"
+    }
+  },
   "exports": {
-    "require": "./lib/index.js",
-    "import": "./lib/index.mjs"
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    },
+    "./*": {
+      "require": "./lib/*.js",
+      "import": "./lib/*.mjs"
+    },
+    "./abstract": {
+      "require": "./lib/abstract/index.js",
+      "import": "./lib/abstract/index.mjs"
+    },
+    "./abstract/*": {
+      "require": "./lib/abstract/*.js",
+      "import": "./lib/abstract/*.mjs"
+    }
   },
   "files": [
     "lib"
@@ -25,7 +50,6 @@
   },
   "homepage": "https://github.com/dwlib-js/intrinsics#readme",
   "dependencies": {
-    "@dwlib/abstract": "^1.0.0",
-    "@dwlib/primordials": "^1.0.2"
+    "@dwlib/global": "^1.0.0"
   }
 }
